@@ -1,717 +1,330 @@
-  <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark Ratsko | UI/UX and brand designer</title>
+<meta name="description" content="Portfolio of Mark Ratsko, a UI/UX and brand designer in Seattle. Websites, brand identities and app design.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
 
-  <title>Home - WWT.</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mark Ratsko | UI/UX and brand designer">
+<meta property="og:description" content="Websites, brand identities and app design from Seattle.">
+<meta property="og:url" content="https://markiscool2.github.io/Markiscool2-website/">
+<meta property="og:image" content="https://markiscool2.github.io/Markiscool2-website/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+<script>
+  (function () {
+    var root = document.documentElement;
+    try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') root.setAttribute('data-theme', t); } catch (e) {}
+    if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) root.classList.add('motion');
+  })();
+</script>
 </head>
-
 <body>
+<a class="skip" href="#work">Skip to work</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Mark Ratsko</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>WESTERN WA TILE<span>.</span></h1>
-      </a>
+<main id="top">
+  <div class="wrap">
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-text">
+        <h1>Websites, brands and app <span>interfaces.</span></h1>
+        <p class="lede">I’m Mark Ratsko, a UI/UX and brand designer in Seattle. I design in Figma and build in Webflow or code.</p>
+      </div>
+      <nav class="index" aria-label="Projects">
+        <a href="#royal-results"><strong>Royal Results</strong><span>Brand and website</span></a>
+        <a href="#anthem"><strong>Anthem Church</strong><span>14-page website</span></a>
+        <a href="#car-rental"><strong>Exotic Car Rental</strong><span>Mobile app</span></a>
+        <a href="#cascadia"><strong>Cascadia Collection</strong><span>Website and build</span></a>
+        <a href="#deskbot"><strong>DeskBot AI</strong><span>Product site</span></a>
+        <a href="#legacy"><strong>Legacy Remodeling</strong><span>16-page prototype</span></a>
+        <a href="#aleks"><strong>Aleks Stashko’s Ministry</strong><span>Wireframe to UI</span></a>
+        <a href="#gly"><strong>GLY Media</strong><span>Landing page</span></a>
+      </nav>
+    </section>
+
+    <div id="work">
+
+      <div class="wall-head reveal">
+        <h2>Selected work</h2>
+        <p>Web, brand and mobile</p>
+      </div>
+
+      <section class="case" id="royal-results" aria-labelledby="royal-title">
+        <div class="case-head reveal">
+          <div>
+            <p class="kicker">Brand identity and website</p>
+            <h2 id="royal-title">Royal Results</h2>
+          </div>
+          <div class="case-text">
+            <p>Royal Results is a digital marketing agency. I designed the identity from scratch and built the website in Webflow.</p>
+            <p>The monogram is an R drawn as one continuous stroke with an offset line beneath it. It comes in horizontal, vertical and square lockups, in black, white and green.</p>
+            <dl class="facts">
+              <div><dt>Role</dt><dd>Identity, web design, Webflow build</dd></div>
+            </dl>
+            <p class="links">
+              <a class="btn primary" href="https://www.figma.com/design/SUISvLkPkX8MjhJ7TevNyx/Royal-Results-Logo?node-id=0-1" target="_blank" rel="noopener">Logo system in Figma <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
+            </p>
+          </div>
+        </div>
+        <div class="stage reveal" style="--tint: #b4f03c">
+          <div class="laptop">
+            <div class="lid"><div class="display"><img src="img/royal-site-800.webp" srcset="img/royal-site-800.webp 800w, img/royal-site-1279.webp 1279w" sizes="(min-width: 1320px) 860px, 76vw" width="1279" height="800" alt="Royal Results home page. Headline reads Crowning your online presence, set in condensed outline and solid type." fetchpriority="high"></div></div>
+            <div class="base"></div>
+          </div>
+        </div>
+        <div class="shots three reveal">
+          <figure><img src="img/royal-logo-white-600.webp" srcset="img/royal-logo-white-600.webp 600w, img/royal-logo-white-1200.webp 1200w" sizes="(min-width: 1320px) 400px, (min-width: 700px) 30vw, 92vw" width="1200" height="800" alt="Royal Results horizontal lockup in white on black." loading="lazy" decoding="async"></figure>
+          <figure><img src="img/royal-logo-green-600.webp" srcset="img/royal-logo-green-600.webp 600w, img/royal-logo-green-1200.webp 1200w" sizes="(min-width: 1320px) 400px, (min-width: 700px) 30vw, 92vw" width="1200" height="800" alt="Royal Results vertical lockup with a green monogram on black." loading="lazy" decoding="async"></figure>
+          <figure class="on-light"><img src="img/royal-logo-black-600.webp" srcset="img/royal-logo-black-600.webp 600w, img/royal-logo-black-1200.webp 1200w" sizes="(min-width: 1320px) 400px, (min-width: 700px) 30vw, 92vw" width="1200" height="800" alt="Royal Results vertical lockup in black on white." loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+
+      <section class="case" id="anthem" aria-labelledby="anthem-title">
+        <div class="case-head reveal">
+          <div>
+            <p class="kicker">Website design</p>
+            <h2 id="anthem-title">Anthem Church</h2>
+          </div>
+          <div class="case-text">
+            <p>A 14-page website for a church, designed in Figma. It covers Sunday gatherings, life groups, giving, baptism, events and four age-group ministries.</p>
+            <p>The full-screen menu lists every ministry, so each one is a single tap from any page.</p>
+            <dl class="facts">
+              <div><dt>Role</dt><dd>Web design</dd></div>
+              <div><dt>Tool</dt><dd>Figma</dd></div>
+            </dl>
+            <p class="links">
+              <a class="btn primary" href="https://www.figma.com/design/eOBVw6HLIpEMuLvs37nZ75/Untitled?node-id=1-44" target="_blank" rel="noopener">All 14 pages in Figma <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
+            </p>
+          </div>
+        </div>
+        <div class="stage reveal" style="--tint: #e0a872">
+          <div class="laptop">
+            <div class="lid"><div class="display"><img src="img/anthem-gatherings-800.webp" srcset="img/anthem-gatherings-800.webp 800w, img/anthem-gatherings-1440.webp 1440w" sizes="(min-width: 1320px) 860px, 76vw" width="1440" height="900" alt="Anthem Church Sunday Gatherings page with a large serif headline over a photo of the worship team." loading="lazy" decoding="async"></div></div>
+            <div class="base"></div>
+          </div>
+        </div>
+        <div class="shots reveal">
+          <figure><img src="img/anthem-menu-800.webp" srcset="img/anthem-menu-800.webp 800w, img/anthem-menu-1440.webp 1440w" sizes="(min-width: 1320px) 610px, (min-width: 700px) 46vw, 92vw" width="1440" height="810" alt="Full-screen menu listing Visit Anthem, Teachings, Life Groups, Beliefs and Donate, with every ministry beside them." loading="lazy" decoding="async"></figure>
+          <figure><img src="img/anthem-leadership-800.webp" srcset="img/anthem-leadership-800.webp 800w, img/anthem-leadership-1440.webp 1440w" sizes="(min-width: 1320px) 610px, (min-width: 700px) 46vw, 92vw" width="1440" height="810" alt="Leadership page titled The Anthem Team over a photo of a Sunday service." loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+
+      <section class="case" id="car-rental" aria-labelledby="rental-title">
+        <div class="case-head reveal">
+          <div>
+            <p class="kicker">Mobile app concept</p>
+            <h2 id="rental-title">Exotic Car Rental</h2>
+          </div>
+          <div class="case-text">
+            <p>A concept for a premium car rental app. The Figma prototype is clickable from start to finish: onboarding, browsing by body style, vehicle details, picking dates, paying, and tracking the delivery.</p>
+            <dl class="facts">
+              <div><dt>Role</dt><dd>Product design, prototyping</dd></div>
+              <div><dt>Tool</dt><dd>Figma</dd></div>
+            </dl>
+            <p class="links">
+              <a class="btn primary" href="https://www.figma.com/proto/0l5qh5NerP0U9Ua2iahqVz/Exotic-Car-Rental-App-Idea?node-id=173-1850&amp;starting-point-node-id=173%3A1850" target="_blank" rel="noopener">Try the prototype <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
+              <a class="btn" href="https://www.figma.com/design/0l5qh5NerP0U9Ua2iahqVz/Exotic-Car-Rental-App-Idea?node-id=2-165" target="_blank" rel="noopener">All screens in Figma <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
+            </p>
+          </div>
+        </div>
+        <div class="stage phones reveal" style="--tint: #ffab2e">
+          <figure><img src="img/rental-onboarding-460.webp" srcset="img/rental-onboarding-460.webp 460w, img/rental-onboarding-720.webp 720w" sizes="(min-width: 1320px) 230px, (min-width: 700px) 18vw, 38vw" width="720" height="1477" alt="Onboarding screen. Premium car rental, with a red Ferrari and a Get started button." loading="lazy" decoding="async"></figure>
+          <figure><img src="img/rental-browse-460.webp" srcset="img/rental-browse-460.webp 460w, img/rental-browse-720.webp 720w" sizes="(min-width: 1320px) 230px, (min-width: 700px) 18vw, 38vw" width="720" height="1477" alt="Browse screen with cars grouped by body style, each card showing a rating and a daily price." loading="lazy" decoding="async"></figure>
+          <figure><img src="img/rental-detail-460.webp" srcset="img/rental-detail-460.webp 460w, img/rental-detail-720.webp 720w" sizes="(min-width: 1320px) 230px, (min-width: 700px) 18vw, 38vw" width="720" height="1477" alt="Vehicle screen for a Porsche 911 GTS with horsepower, 0 to 60 time and top speed, and a Book a car button." loading="lazy" decoding="async"></figure>
+          <figure><img src="img/rental-tracking-460.webp" srcset="img/rental-tracking-460.webp 460w, img/rental-tracking-720.webp 720w" sizes="(min-width: 1320px) 230px, (min-width: 700px) 18vw, 38vw" width="720" height="1477" alt="Car tracking screen with the car on a map, the assistant to call or message, and the time remaining." loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+
+      <section class="case" id="cascadia" aria-labelledby="cascadia-title">
+        <div class="case-head reveal">
+          <div>
+            <p class="kicker">Website design and build</p>
+            <h2 id="cascadia-title">Cascadia Collection</h2>
+          </div>
+          <div class="case-text">
+            <p>A website for an exotic and luxury car dealer in Enumclaw, Washington. I designed it and built it in HTML, CSS and JavaScript.</p>
+            <p>Visitors can filter the inventory by make and body style, sort it, and open a page for each car.</p>
+            <dl class="facts">
+              <div><dt>Role</dt><dd>Design, front-end build</dd></div>
+            </dl>
+            <p class="links">
+              <a class="btn primary" href="cascadia/">View the site <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </p>
+          </div>
+        </div>
+        <div class="stage reveal" style="--tint: #c5a469">
+          <div class="laptop">
+            <div class="lid"><div class="display"><img src="img/cascadia-home-800.webp" srcset="img/cascadia-home-800.webp 800w, img/cascadia-home-1600.webp 1600w" sizes="(min-width: 1320px) 860px, 76vw" width="1600" height="1000" alt="Cascadia Collection home page. A serif wordmark sits over a dark photo of a car parked under a tree." loading="lazy" decoding="async"></div></div>
+            <div class="base"></div>
+          </div>
+        </div>
+        <div class="shots reveal">
+          <figure><img src="img/cascadia-inventory-800.webp" srcset="img/cascadia-inventory-800.webp 800w, img/cascadia-inventory-1600.webp 1600w" sizes="(min-width: 1320px) 610px, (min-width: 700px) 46vw, 92vw" width="1600" height="1000" alt="Inventory grid with filters for make and body style above cards for each car." loading="lazy" decoding="async"></figure>
+          <figure><img src="img/cascadia-vehicle-800.webp" srcset="img/cascadia-vehicle-800.webp 800w, img/cascadia-vehicle-1600.webp 1600w" sizes="(min-width: 1320px) 610px, (min-width: 700px) 46vw, 92vw" width="1600" height="1000" alt="Vehicle page for a Lamborghini Aventador with a photo, specifications and a button to call about the car." loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+
+      <section class="case" id="deskbot" aria-labelledby="deskbot-title">
+        <div class="case-head reveal">
+          <div>
+            <p class="kicker">Live site</p>
+            <h2 id="deskbot-title">DeskBot AI</h2>
+          </div>
+          <div class="case-text">
+            <p>DeskBot is an AI receptionist for home service businesses. I designed and built its marketing site and pricing page, and wrote the copy.</p>
+            <p>The home page starts with what missed calls cost. A calculator lets an owner enter their own call volume and see the number for their business.</p>
+            <dl class="facts">
+              <div><dt>Role</dt><dd>Design, front-end build, copywriting</dd></div>
+            </dl>
+            <p class="links">
+              <a class="btn primary" href="https://deskbotai.com/" target="_blank" rel="noopener">Visit deskbotai.com <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
+            </p>
+          </div>
+        </div>
+        <div class="stage duo reveal" style="--tint: #2f6df6">
+          <div class="laptop">
+            <div class="lid"><div class="display"><img src="img/deskbot-home-800.webp" srcset="img/deskbot-home-800.webp 800w, img/deskbot-home-1600.webp 1600w" sizes="(min-width: 1320px) 580px, (min-width: 860px) 44vw, 76vw" width="1600" height="1000" alt="DeskBot AI home page. Headline reads Stop losing $6,000+ annually to missed calls, next to a sample conversation between a caller and the AI receptionist." loading="lazy" decoding="async"></div></div>
+            <div class="base"></div>
+          </div>
+          <div class="tablet">
+            <div class="display"><img src="img/deskbot-tablet-640.webp" srcset="img/deskbot-tablet-640.webp 640w, img/deskbot-tablet-1200.webp 1200w" sizes="(min-width: 1320px) 400px, (min-width: 860px) 30vw, 76vw" width="1200" height="900" alt="DeskBot pricing page on a tablet, with a savings calculator above the plans." loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+        <div class="shots reveal">
+          <figure><img src="img/deskbot-calculator-800.webp" srcset="img/deskbot-calculator-800.webp 800w, img/deskbot-calculator-1600.webp 1600w" sizes="(min-width: 1320px) 610px, (min-width: 700px) 46vw, 92vw" width="1600" height="1111" alt="Revenue calculator with sliders for calls per month and average revenue per client, and the resulting monthly and annual loss." loading="lazy" decoding="async"></figure>
+          <figure><img src="img/deskbot-pricing-800.webp" srcset="img/deskbot-pricing-800.webp 800w, img/deskbot-pricing-1600.webp 1600w" sizes="(min-width: 1320px) 610px, (min-width: 700px) 46vw, 92vw" width="1600" height="1111" alt="Pricing page with three plans side by side at $297, $497 and $697 a month." loading="lazy" decoding="async"></figure>
+        </div>
+      </section>
+
+      <section class="more" aria-labelledby="more-title">
+        <div class="wall-head reveal">
+          <h2 id="more-title">More work</h2>
+          <p>Prototypes and concepts</p>
+        </div>
+        <ul class="more-list">
+          <li class="reveal" id="legacy">
+            <figure><img src="img/legacy-process-640.webp" srcset="img/legacy-process-640.webp 640w, img/legacy-process-1200.webp 1200w" sizes="(min-width: 1320px) 400px, (min-width: 700px) 30vw, 92vw" width="1200" height="800" alt="Legacy Remodeling process page with the heading We make remodeling easy and a numbered first step." loading="lazy" decoding="async"></figure>
+            <p class="kicker">Interactive Figma prototype</p>
+            <h3>Legacy Remodeling</h3>
+            <p>A 16-page clickable prototype for a remodeling company, with separate navigation for homeowners and for B2B work.</p>
+            <p class="links"><a href="https://www.figma.com/proto/njXZ2g8HZwvSKl27mBNh1c/LEGACY-PROTO?node-id=1-2" target="_blank" rel="noopener">Open the prototype <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></p>
+          </li>
+          <li class="reveal" id="aleks">
+            <figure><img src="img/aleks-concept-640.webp" srcset="img/aleks-concept-640.webp 640w, img/aleks-concept-940.webp 940w" sizes="(min-width: 1320px) 400px, (min-width: 700px) 30vw, 92vw" width="940" height="626" alt="Home page concept for Aleks Stashko’s Ministry with neon light trails over a photo of a crowd at worship." loading="lazy" decoding="async"></figure>
+            <p class="kicker">Wireframe to UI</p>
+            <h3>Aleks Stashko’s Ministry</h3>
+            <p>Four pages taken from wireframe to finished UI in Figma.</p>
+            <p class="links"><a href="https://www.figma.com/design/OHbgAuUASV2FBlFlBlQdP5/Aleks-Website-s-Wireframe---Concept-?node-id=0-1" target="_blank" rel="noopener">Open in Figma <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></p>
+          </li>
+          <li class="reveal" id="gly">
+            <figure><img src="img/gly-process-640.webp" srcset="img/gly-process-640.webp 640w, img/gly-process-996.webp 996w" sizes="(min-width: 1320px) 400px, (min-width: 700px) 30vw, 92vw" width="996" height="664" alt="GLY Media landing page section titled Start to finish in one week, with numbered steps and hand-drawn icons." loading="lazy" decoding="async"></figure>
+            <p class="kicker">Landing page</p>
+            <h3>GLY Media</h3>
+            <p>Landing page for a studio that delivers prototypes in one week.</p>
+          </li>
         </ul>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero">
-
-    <div class="info d-flex align-items-center">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2 data-aos="fade-down">Welcome to <span>WesternWATile</span></h2>
-            <p data-aos="fade-up">Providing the best tile contractors who are installing high quality tile and high quality installation is our number one priority.</p>
-            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
-
-      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+      </section>
 
     </div>
 
-  </section><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= Get Started Section ======= -->
-    <section id="get-started" class="get-started section-bg" >
-      <div class="container">
-
-        <div class="row justify-content-between gy-4">
-
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
-            <div class="content">
-              <h3>Looking for high quality tile installation? Contact us today!</h3>
-              <p>With a diligent and dedicated team of professional installers, masons, and artists, Western WA Tile is perfectly placed to provide your home or business with an experienced and reliable tiling service that will simply not be beaten. So, whether you are looking to remodel your kitchen with marble or design a bathroom from scratch using ceramic, we can help. What’s more, our convenient opening hours as well as weekend service mean that you will never be left wanting more with Western WA Tile on your side.
-              <p>As well as providing the number one tile installation service, Western WA Tile also offers a reputable repair and restoration services that can transform your tiles from old and shoddy to shiny and new in no time at all.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-5" data-aos="fade">
-            <form action="https://formspree.io/f/xnqrbwek" method="post" class="php-email-form">
-              <h3>Get a quote</h3>
-              <p>Pick up the phone and call us today. We will be happy to answer any of your questions and can even provide you with a free quote. So, get in touch today—we promise you won’t be disappointed!</p>
-              <div class="row gy-3">
-
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-
-                <div class="col-md-12 ">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                  <button type="submit">Get a quote</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Quote Form -->
-
-        </div>
-
+    <aside class="nda reveal" aria-labelledby="nda-title">
+      <div class="lock" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+      <div>
+        <h3 id="nda-title">More client work under NDA</h3>
+        <p>Some client work, including projects with Creative Clear, is under NDA and isn’t shown here.</p>
       </div>
-    </section><!-- End Get Started Section -->
+    </aside>
 
-    <!-- ======= Constructions Section ======= -->
-    <section id="constructions" class="constructions">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Construction</h2>
-          <p>While many property owners have attempted to install tile terrazzo on their own, the fact of the matter is that this type of job is best left to the professionals. Why get the job done twice when you can have it done right the first time?</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-1.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">We find the materals</h4>
-                    <p>Before we start a project we have to find the materials we are using starting from prep to putting in the grout</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-2.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Getting on site</h4>
-                    <p>When we get on site we have to evaluate how we are going to start the project with the prep work and how the tile is going to flow</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-3.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Delivering the service</h4>
-                    <p>When we are making your beautiful tile work we take our time to make sure he deliever the highest quality install </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg" style="background-image: url(assets/img/constructions-4.jpg);"></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Finishing the service</h4>
-                    <p>When we finish the service we double check everything so there may be no imperfections and that everything is cleaned up ready for you to look at it and love it</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Card Item -->
-
-        </div>
-
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="reveal">
+        <p class="kicker">About</p>
+        <h2 id="about-title">From wireframe to launch.</h2>
       </div>
-    </section><!-- End Constructions Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Services</h2>
-          <p>
-            
-          </p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-mountain-city"></i>
-              </div>
-              <h3>Ceramic Tile</h3>
-              <p>Are you seeking reliable ceramic tile installation...</p>
-              <a href="Ceramic-Tile.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>Floor Tiles</h3>
-              <p>Western WA Tile floor tiling specialists provide a complete range of...</p>
-              <a href="Floor-Tiles.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-compass-drafting"></i>
-              </div>
-              <h3>Marble Installation</h3>
-            </p>Western WA Tile offers complete marble installation services...</p>
-              <a href="Marble-Installation.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-trowel-bricks"></i>
-              </div>
-              <h3>Tile Repair</h3>
-              <p>If you are looking for a tile repair team that will go above and beyond to deliver...</p>
-              <a href="Tile%20Repair.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-helmet-safety"></i>
-              </div>
-              <h3>Residential Mosaic</h3>
-              <p>Offering a trustworthy and dependable residential mosaic tiling services...</p>
-              <a href="Residential%20Mosaic.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fa-solid fa-arrow-up-from-ground-water"></i>
-              </div>
-              <h3>Wall Tiles</h3>
-              <p>With an unmatched attention to detail, Western WA Tile offers a wall tiling service that is...</p>
-              <a href="Wall%20Tiles.html" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
+      <div class="about-text reveal">
+        <p>I’m a UI/UX and brand designer based in Seattle. I usually start with wireframes, move to high-fidelity UI and a clickable prototype, then build the site myself.</p>
+        <dl class="tools">
+          <div><dt>Figma</dt><dd>UI/UX and prototypes</dd></div>
+          <div><dt>Webflow</dt><dd>Sites</dd></div>
+          <div><dt>HTML, CSS, JS</dt><dd>Front end</dd></div>
+          <div><dt>Brand identity</dt><dd>Logos and systems</dd></div>
+        </dl>
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= Alt Services Section ======= -->
-    <section id="alt-services" class="alt-services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row justify-content-around gy-4">
-          <div class="col-lg-6 img-bg" style="background-image: url(assets/img/alt-services1.png);" data-aos="zoom-in" data-aos-delay="100"></div>
-
-          <div class="col-lg-5 d-flex flex-column justify-content-center">
-            <h3>Our purpose</h3>
-            <p>Our purpose is to create the best tile work and the best experince for our clients</p>
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-easel flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Pre-Installation</a></h4>
-                <p>We take our time making sure we get the best materials suited for your needs</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-patch-check flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">On-Site</a></h4>
-                <p>When we get on site we make sure to examine everything so nothing will be in the way and find the perfect way to lay the tile for your needs</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Installation</a></h4>
-                <p>When we are installing the tile we make sure that there are no mistakes in our work and that it is perfect for the client</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-brightness-high flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Post-Installation</a></h4>
-                <p>Before we give you the final prodect we double check everything to make sure there is nothing wrong and that it was set the way we wanted it</p>
-              </div>
-            </div><!-- End Icon Box -->
-
-          </div>
-        </div>
-
+    <section class="contact reveal" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2 id="contact-title">Get in touch.</h2>
+        <a class="email" id="email" href="mailto:iammarkratsko@gmail.com">iammarkratsko@gmail.com</a>
       </div>
-    </section><!-- End Alt Services Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <ul class="nav nav-tabs row  g-2 d-flex">
-
-          <li class="nav-item col-3">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
-              <h4>Pre-Installation</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
-              <h4>On-site</h4>
-            </a><!-- End tab nav item -->
-
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
-              <h4>Installation</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
-              <h4>Post-installation</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-        </ul>
-
-        <div class="tab-content">
-
-          <div class="tab-pane active show" id="tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <h3>Pre-installtion</h3>
-                <p class="fst-italic">
-                  Before we start a project we have to find the materials we are using starting from prep to putting in the grout
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Finding the right tile for you</li>
-                  <li><i class="bi bi-check2-all"></i> Finding the right grout for you</li>
-                  <li><i class="bi bi-check2-all"></i> Finding the highest quality material</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-1.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-2">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>On-Site</h3>
-                <p class="fst-italic">
-                  When we get on site we have to evaluate how we are going to start the project with the prep work and how the tile is going to flow
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Setting the area for tile</li>
-                  <li><i class="bi bi-check2-all"></i> Examining for any problems that we can run into</li>
-                  <li><i class="bi bi-check2-all"></i> Finding the perfect way that the client wants the tile to be set</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-3">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Installation</h3>
-                <p class="fst-italic">
-                  When we are making your beautiful tile work we take our time to make sure he deliever the highest quality install
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Custom cutting pieces to fit your dream</li>
-                  <li><i class="bi bi-check2-all"></i> Installing it right so it stays for years to come </li>
-                  <li><i class="bi bi-check2-all"></i> Double checking the work making sure there are no imperfections</li>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-          <div class="tab-pane" id="tab-4">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                <h3>Post-installation</h3>
-                <p class="fst-italic">
-                  When we finish the service we double check everything so there may be no imperfections and that everything is cleaned up ready for you to look at it and love it
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> Triple checking the work for any inperfections</li>
-                  <li><i class="bi bi-check2-all"></i> Cleaning up everything as if we were never there</li>
-                  <li><i class="bi bi-check2-all"></i> Having the perfect tile placed that you imagined</li>
-                </ul>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-          </div><!-- End tab content item -->
-
-        </div>
-
+      <div class="row">
+        <button class="btn primary" type="button" id="copy">Copy email</button>
+        <a class="btn" href="https://www.linkedin.com/in/markratsko" target="_blank" rel="noopener">LinkedIn <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a>
       </div>
-    </section><!-- End Features Section -->
+    </section>
 
-    <!-- ======= Our Projects Section ======= -->
-    <section id="projects" class="projects">
-      <div class="container" data-aos="fade-up">
+    <footer>
+      <span>Mark Ratsko, Seattle, WA</span>
+      <span>Portfolio 2026</span>
+    </footer>
 
-        <div class="section-header">
-          <h2>Our Projects</h2>
-          <p>Our work that we have done</p>
-        </div>
+  </div>
+</main>
 
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+<script>
+(function () {
+  var root = document.documentElement;
 
-          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-remodeling">Remodeling</li>
-            <li data-filter=".filter-construction">Construction</li>
-            <li data-filter=".filter-repairs">Repairs</li>
-            <li data-filter=".filter-design">Design</li>
-          </ul><!-- End Projects Filters -->
+  document.getElementById('theme').addEventListener('click', function () {
+    var now = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = now === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
 
-          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+  var copy = document.getElementById('copy');
+  copy.addEventListener('click', function () {
+    var text = document.getElementById('email').textContent.trim();
+    var done = function () { copy.textContent = 'Copied'; setTimeout(function () { copy.textContent = 'Copy email'; }, 1800); };
+    var fallback = function () { window.location.href = 'mailto:' + text; };
+    try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+  });
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Remodeling 1</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/remodeling-1.jpg" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Construction 1</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/construction-1.jpg" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Repairs 1</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/repairs-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Design 1</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/design-1.jpg" title="Repairs 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Remodeling 2</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/remodeling-2.jpg" title="Remodeling 2" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Construction 2</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/construction-2.jpg" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Repairs 2</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/repairs-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Design 2</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/design-2.jpg" title="Repairs 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/remodeling-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Remodeling 3</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/remodeling-3.jpg" title="Remodeling 3" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/construction-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Construction 3</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/construction-3.jpg" title="Construction 3" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/repairs-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Repairs 3</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/repairs-3.jpg" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/projects/design-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Design 3</h4>
-                  <p>Remodeling</p>
-                  <a href="assets/img/projects/design-3.jpg" title="Repairs 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"></i></a>
-                </div>
-              </div>
-            </div><!-- End Projects Item -->
-
-          </div><!-- End Projects Container -->
-
-        </div>
-
-      </div>
-    </section><!-- End Our Projects Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-
-    </section><!-- End Testimonials Section -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-content position-relative">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>WESTERNWATILE</h3>
-              <p>Seattle, WA<br><br>
-                <strong>Phone:</strong> +1 206-327-4113<br>
-                <strong>Email:</strong> westernwatile@gmail.com<br>
-              </p>
-              <div class="social-links d-flex mt-3">
-                <a href="https://twitter.com/westernwatile" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
-                <a href="https://m.facebook.com/1460769587389763/photos/a.1500871986712856/1951273555006028/?type=3" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/westernwatile/" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/westernwatile" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>  
-          </div><!-- End footer info column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="services.html">Tile Repair</a></li>
-              <li><a href="services.html">Wall Tiles</a></li>
-              <li><a href="services.html">Marble Installation</a></li>
-              <li><a href="services.html">Ceramic Tile</a></li>
-            </ul>
-          </div><!-- End footer links column-->
-        </div>
-      </div>
-    </div>
-    <div class="footer-legal text-center position-relative">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>WESTERNWATILE</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-        </div>
-      </div>
-    </div>
-
-  </footer>
-  <!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  if (root.classList.contains('motion')) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  }
+})();
+</script>
 </body>
-
 </html>
